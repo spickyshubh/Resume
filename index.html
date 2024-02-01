@@ -64,7 +64,84 @@
   margin-left:-5px;
   margin-right:-5px;
 }
-        
+#kai:hover{
+  transform: scale(1.5);
+  font-family: cursive;
+  border-radius: 50px;
+background: #1c3192;
+box-shadow: inset 21px 21px 42px #111d56,
+            inset -21px -21px 42px #2745ce;
+}
+#hb:hover{
+    transform: scale(1.5);
+    border-radius: 105px;
+    border-radius: 25px;
+background: #a71b1b;
+box-shadow: inset 21px 21px 31px #4e0d0d,
+            inset -21px -21px 31px #ff2929;;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-delay: 1s;
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+#st:hover{
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-360deg) translateY(-10%);
+    color:#eaeaea;
+    border-radius: 69px;
+background: #901c92;
+box-shadow: inset 21px 21px 7px #511052,
+            inset -21px -21px 7px #cf28d2; 
+}
+#ct:hover
+    {
+  width: 180px;
+  height: 180px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  }
+#cts:hover{
+  width: 280px;
+  height: 250px;
+  background-color: red;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 50s;
+  animation-fill-mode: forwards;
+}
+#p1 {animation-timing-function: linear;}
+#p2 {animation-timing-function: ease;}
+#p3 {animation-timing-function: ease-in;}
+#p4 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}  
+#t1:hover{
+    border-radius: 69px;
+background: #292829;
+box-shadow: inset 21px 21px 7px #121212,
+            inset -21px -21px 7px #403e40;
+    transform: scaley(1.5);
+}
+#t2:hover{
+    border-radius: 69px;
+background: #292829;
+box-shadow: inset 21px 21px 7px #121212,
+            inset -21px -21px 7px #403e40;
+    transform: scaley(1.5);
+}
+
     </style>
 </head>
 <body>
@@ -86,15 +163,15 @@
 </div>
 
  <div class="present">
-    <div class="contact">
+    <div class="contact" id="cts">
          <h4 style="color:aliceblue ;" align="center">CONTACT <hr width="75px" align="center"></h4>
- <p style="color:aliceblue ;"><b>Address:</b>Aadarsh colony,Katni</p>
- <p style="color:aliceblue ;"><b>Phone:</b>7869002751</p>
- <p style="color:aliceblue ;" ><b>Email Address:</b><a href="sshubhamshukla@gmail.com">sshubhamshukla@gmail.com</a></p>
- <p style="color:aliceblue ;"><b>Linkedin:</b><a href="https://www.linkedin.com/in/shubham-shukla-a41838142/">shubham-shukla-a41838142</a></p></div>
+ <p style="color:aliceblue ;" id="p1"><b>Address:</b>Aadarsh colony,Katni</p>
+ <p style="color:aliceblue ;" id="p2"><b>Phone:</b>7869002751</p>
+ <p style="color:aliceblue ;" id="p3"><b>Email Address:</b><a href="sshubhamshukla@gmail.com">sshubhamshukla@gmail.com</a></p>
+ <p style="color:aliceblue ;" id="p4"><b>Linkedin:</b><a href="https://www.linkedin.com/in/shubham-shukla-a41838142/">shubham-shukla-a41838142</a></p></div>
  
-<div class="skills">
-    <h4 style="color: aliceblue;"align="center" >SKILLS<hr width="53px" align="center"></h4>
+<div class="skills" id="kai">
+    <h4 style="color: aliceblue;"align="center"  >SKILLS<hr width="53px" align="center"></h4>
     <ul style="color: aliceblue;">
         <li>Javascript with UI React</li>
         <li>Front End Web Development -: HTML5,CSS,JQUERY,BOOTSTRAP,AJAX,NODE JS</li>
@@ -104,7 +181,7 @@
         <li>Architectural Softwares-AutoCad,Sketchup,Watergem</li>
     </ul>
 </div>
-<div class="hobbies">
+<div class="hobbies" id="hb">
     <h4 style="color: aliceblue;" align="center">HOBBIES<hr width="70px" align="center"></h4>
     <ul style="color: aliceblue;">
         <li>Singing Songs</li>
@@ -115,7 +192,7 @@
         <li>Event Planning</li>
     </ul>
 </div>
-<div class="strength">
+<div class="strength" id="st">
     <h4 style="color: aliceblue;" align="center">STREGNTH<hr width="90px" align="center"></h4>
     <ul style="color: aliceblue;">
         <li>Quick Learner</li>
@@ -126,7 +203,7 @@
         <li>Leadership</li>
     </ul>
 </div>
-<div class="Certificates">
+<div class="Certificates" id="ct">
     <h4 style="color: aliceblue;" align="center">CERTIFICATES<hr width="90px" align="center"></h4>
     <ul style="color: aliceblue;">
         <li>WebDevelopment</li>
@@ -138,7 +215,7 @@
 </div>
 
 <div class="wa">
-<div class="WorkExperience" align="right">
+<div class="WorkExperience" align="right" id="t1">
     <h4 style="color: aliceblue;" align="center">WORK EXPERIENCE IN NON IT SECTOR<hr width="302px" align="center"></h4>
     <table border="3" style="color: aliceblue; letter-spacing: 1px; text-align: center;"  cellpadding="7" align="right">
         <tr style="height: 50px;font-family: cursive;background-color: cadetblue;">
@@ -169,7 +246,7 @@
     </table>
     </div>
 
-    <div class="Academics" align="left">
+    <div class="Academics" align="left" id="t2">
     <h4 style="color:aliceblue ;" align="center">ACADEMICS <hr width="93px" align="center"></h4>
     <table border="3" style="color: black; letter-spacing: 1px; text-align: center;" align="left" cellpadding="7">
         <tr style="height: 50px;font-family: cursive;background-color: blanchedalmond;">
@@ -179,21 +256,21 @@
             <th>PASSOUTYEAR</th>
             <th>AGGREGRATE/CGPA</th>
             </tr>
-            <tr style="background-color: rgb(25, 87, 68);">
+            <tr style="background-color: rgb(128, 156, 148);">
                 <th>Graduation</th>
                 <td>B.E(Civil)</td>
                 <td>RGPV</td>
                 <td>2017</td>
                 <td>7.14</td>
             </tr>
-            <tr style="background-color: rgb(25, 87, 68);">
+            <tr style="background-color: rgb(128, 156, 148);">
                 <th>Senior Secondary</th>
                 <td>PCM</td>
                 <td>CBSE</td>
                 <td>2013</td>
                 <td>6.3</td>
             </tr>
-            <tr style="background-color: rgb(25, 87, 68);">
+            <tr style="background-color: rgb(128, 156, 148);">
                 <th>Higher Secondary</th>
                 <td>ALL</td>
                 <td>MP BOARD</td>
